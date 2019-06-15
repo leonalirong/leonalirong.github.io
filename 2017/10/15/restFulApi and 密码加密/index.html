@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="Leona">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">DETAIL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/leonalirong" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1560598689028&amp;di=261a676521da6ec2e48078fee759e634&amp;imgtype=0&amp;src=http%3A%2F%2Fatc.cuepa.cn%2Fnewspic%2F355440%2Fs_ef4da82b07953fb1d7eaa30465035b59177872.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>restFulApi</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="restFulApi"><a href="#restFulApi" class="headerlink" title="restFulApi"></a>restFulApi</h2><h3 id="使用同一个url地址，根据不同的请求方式来做得不同的功能点，就是这个-api-的设计思想"><a href="#使用同一个url地址，根据不同的请求方式来做得不同的功能点，就是这个-api-的设计思想" class="headerlink" title="使用同一个url地址，根据不同的请求方式来做得不同的功能点，就是这个 api 的设计思想"></a>使用同一个url地址，根据不同的请求方式来做得不同的功能点，就是这个 api 的设计思想</h3><ul>
+<li>get  查询</li>
+<li>post 新建</li>
+<li>put | patch 更新</li>
+<li>delete 删除</li>
+</ul>
+<h2 id="密码加密"><a href="#密码加密" class="headerlink" title="密码加密"></a>密码加密</h2><ol>
+<li>md5</li>
+<li>hash加密 + 加盐 + 加味精</li>
+</ol>
+<h3 id="1-使用-bcrypt-来实现密码的加密与加盐的操作"><a href="#1-使用-bcrypt-来实现密码的加密与加盐的操作" class="headerlink" title="1.使用 bcrypt 来实现密码的加密与加盐的操作"></a>1.使用 bcrypt 来实现密码的加密与加盐的操作</h3><ol>
+<li><p>下载安装 </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install bcrypt --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在用户注册的时候，使用 bcrypt 将 密码给加密加盐处理了，再存储到数据库。</p>
+<p> bcrypt.hash()<br> bcrypt.compare()</p>
+</li>
+</ol>
+<h3 id="2-jsonwebtoken令牌，将登录的信息保存唯一的信息"><a href="#2-jsonwebtoken令牌，将登录的信息保存唯一的信息" class="headerlink" title="2. jsonwebtoken令牌，将登录的信息保存唯一的信息"></a>2. jsonwebtoken令牌，将登录的信息保存唯一的信息</h3><p>1.安装</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install jsonwebtoken --save</span><br></pre></td></tr></table></figure>
+
+<p>2.前端查询学生，发送ajax请求时，需要加上token请求头</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">headers: &#123;</span><br><span class="line">        <span class="string">'access_token'</span>: localStorage.getItem(<span class="string">'token'</span>)</span><br><span class="line">      &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>3.后端需要设置响应头</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">app.use(<span class="function">(<span class="params">req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 响应头设置</span></span><br><span class="line">  res.set(<span class="string">'Access-Control-Allow-Origin'</span>, <span class="string">'*'</span>);</span><br><span class="line">  <span class="comment">// 设置允许前端传递的自定义请求头</span></span><br><span class="line">  res.set(<span class="string">'Access-Control-Allow-Headers'</span>, <span class="string">'access_token'</span>);</span><br><span class="line"></span><br><span class="line">  next();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>4.后端路由需要设置一个含有token信息的中间件函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> jwt = <span class="built_in">require</span>(<span class="string">'jsonwebtoken'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function">(<span class="params">req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 1. 得到前端传递过来的token, req.get 请求头中拿数据</span></span><br><span class="line">  <span class="keyword">let</span> token = req.get(<span class="string">'access_token'</span>);</span><br><span class="line">  <span class="keyword">if</span> (!token) &#123;</span><br><span class="line">    <span class="comment">// 如果token不存在</span></span><br><span class="line">    res.send(&#123;</span><br><span class="line">      code: <span class="number">-1</span>,</span><br><span class="line">      msg: <span class="string">'token不存在'</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// token存在，验证其有效性</span></span><br><span class="line">    jwt.verify(token, <span class="string">'MYGOD'</span>, (err, data) =&gt; &#123;</span><br><span class="line">      <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="comment">// token有问题</span></span><br><span class="line">        res.send(&#123;</span><br><span class="line">          code: <span class="number">-1</span>,</span><br><span class="line">          msg: err.message</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// token没问题，该请求是可信任的。</span></span><br><span class="line">        <span class="built_in">console</span>.log(data);</span><br><span class="line">        req.userId = data.id;</span><br><span class="line">        next();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-设置用户头像"><a href="#3-设置用户头像" class="headerlink" title="3.设置用户头像"></a>3.设置用户头像</h3><p>1.保存用户登录后的token，当带有这个token时才会显示首页，否则跳到登录页面，登录成功后才可进行更换用户头像的操作</p>
+<p>2.当弹出更换头像的input框时，input的type类型为’file’类型</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#ok'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> formData = <span class="keyword">new</span> FormData();</span><br><span class="line">  formData.append(<span class="string">'avatar'</span>, $(<span class="string">'input[name="avatar"]'</span>)[<span class="number">0</span>].files[<span class="number">0</span>])</span><br><span class="line"><span class="comment">//这里不能用val（），而是要用files，files是一个对象信息，我们要的是files[0],这个对象</span></span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    url: <span class="string">'http://localhost:3000/api/user/upload'</span>,</span><br><span class="line">    method: <span class="string">'POST'</span>,</span><br><span class="line">    headers: &#123;</span><br><span class="line">      <span class="string">'access_token'</span>: localStorage.getItem(<span class="string">'token'</span>),</span><br><span class="line">    &#125;,</span><br><span class="line">    data: formData,</span><br><span class="line">    processData: <span class="literal">false</span>, <span class="comment">// 注意</span></span><br><span class="line">    contentType: <span class="literal">false</span>, <span class="comment">// 注意</span></span><br><span class="line">    success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(res);</span><br><span class="line">      <span class="keyword">if</span> (res.code === <span class="number">0</span>) &#123;</span><br><span class="line">        $(<span class="string">'.avator'</span>).attr(<span class="string">'src'</span>, res.data.avatar);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 更新 本地存储</span></span><br><span class="line">        <span class="keyword">var</span> userInfo = <span class="built_in">JSON</span>.parse(localStorage.getItem(<span class="string">'userInfo'</span>));</span><br><span class="line">        userInfo.avatar = res.data.avatar;</span><br><span class="line"></span><br><span class="line">        localStorage.setItem(<span class="string">'userInfo'</span>, <span class="built_in">JSON</span>.stringify(userInfo));</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        alert(res.msg);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      $(<span class="string">'#myModal2'</span>).modal(<span class="string">'hide'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：<code>formData.append(&#39;avatar&#39;, $(&#39;input[name=&quot;avatar&quot;]&#39;)[0].files[0])</code><br>这里不能用val（），而是要用files，files是一个对象信息，我们要的是files[0],这个对象,<br><code>processData: false, 
+contentType: false,</code><br>要这两项一定要设置为false，如果不设置，他会将信息进行编码 </p>
+</blockquote>
+<h3 id="4-live-server"><a href="#4-live-server" class="headerlink" title="4. live-server"></a>4. live-server</h3><p>1.项目目录使用live-server命令行命令便可直接在浏览器中预览</p>
+<p>2.安装</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g live-server</span><br></pre></td></tr></table></figure>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2017/10/15/restFulApi and 密码加密/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2017/10/15/restFulApi and 密码加密/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
