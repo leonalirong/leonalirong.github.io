@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>express基础和mongodb | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="##express基础 ###1.express 路由 app.use 与 app.all 有什么区别  app.all 其实可以理解为 是  app.get app.post app.delete …. 的一个简写方式 app.use 是使用中间件的。 app.all 里面的 PATH 路径是全匹配。 app.use 里面的 PATH 是一个前缀  ###2.express.Router 构造器">
+<meta name="keywords" content="nodejs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="express基础和mongodb">
+<meta property="og:url" content="http://yoursite.com/2017/10/01/express基础和mongodb/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##express基础 ###1.express 路由 app.use 与 app.all 有什么区别  app.all 其实可以理解为 是  app.get app.post app.delete …. 的一个简写方式 app.use 是使用中间件的。 app.all 里面的 PATH 路径是全匹配。 app.use 里面的 PATH 是一个前缀  ###2.express.Router 构造器">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-15T01:20:31.500Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="express基础和mongodb">
+<meta name="twitter:description" content="##express基础 ###1.express 路由 app.use 与 app.all 有什么区别  app.all 其实可以理解为 是  app.get app.post app.delete …. 的一个简写方式 app.use 是使用中间件的。 app.all 里面的 PATH 路径是全匹配。 app.use 里面的 PATH 是一个前缀  ###2.express.Router 构造器">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-express基础和mongodb" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-express基础和mongodb" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/01/express基础和mongodb/" class="article-date">
   <time datetime="2017-10-01T01:18:24.000Z" itemprop="datePublished">2017-10-01</time>
@@ -75,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/01/express基础和mongodb/">express基础和mongodb</a>
+    <h1 class="article-title" itemprop="name">
+      express基础和mongodb
     </h1>
   
 
@@ -171,86 +174,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-post初识nodejs" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/14/post初识nodejs/" class="article-date">
-  <time datetime="2017-09-14T13:19:30.000Z" itemprop="datePublished">2017-09-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/14/post初识nodejs/">初识nodejs</a>
-    </h1>
+    <a href="/2017/09/14/post初识nodejs/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">初识nodejs</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="nodeJs-基础知识"><a href="#nodeJs-基础知识" class="headerlink" title="nodeJs 基础知识"></a>nodeJs 基础知识</h1><hr>
-<h3 id="1-nodeJs的基础知识："><a href="#1-nodeJs的基础知识：" class="headerlink" title="1.nodeJs的基础知识："></a>1.nodeJs的基础知识：</h3><blockquote>
-<ul>
-<li>nodeJs是通过命令行的工具来运行的（cmd)</li>
-<li>nodeJs通过require来加载模块(const fs=require(‘fs’)</li>
-<li>http是node自带的模块</li>
-</ul>
-</blockquote>
-<h3 id="2-暴露对象："><a href="#2-暴露对象：" class="headerlink" title="2.暴露对象："></a>2.暴露对象：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">module</span>.exports=&#123;</span><br><span class="line">    add:func,</span><br><span class="line">    a:a</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-module-exports和exports的不同："><a href="#3-module-exports和exports的不同：" class="headerlink" title="3.module.exports和exports的不同："></a>3.module.exports和exports的不同：</h3><p>1.每个nodeJs模块文件相当于在文件开头都有这么一串代码:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> exports = <span class="built_in">module</span>.exports;</span><br></pre></td></tr></table></figure>
-
-<p>2.exports.xxx  不能 这样写  exports = xxx;<br>3.exports 是 module.exports 的一个简写方式;<br>4.可以直接在 exports 上加属性,不能直接将 exports 重新赋值;</p>
-<p>###4.异步和同步<br>1.异步：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'begin'</span>);</span><br><span class="line">fs.readFile(<span class="string">'./test.txt'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">err, data</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (err) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err.message);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data.toString());</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end'</span>);</span><br><span class="line"></span><br><span class="line">(结果：begin-end-data)</span><br></pre></td></tr></table></figure>
-
-<p>2.同步：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'begin'</span>);</span><br><span class="line"><span class="keyword">var</span> data=readFileSync(<span class="string">'./test1.txt'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(data);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'end'</span>);</span><br><span class="line"></span><br><span class="line">(结果：begin-data-end)(如果中间出错了，则下面的代码不会运行)</span><br></pre></td></tr></table></figure>
-
-<p><code>(tips:只要是后缀有Sync就是同步操作)</code></p>
-<p>###5.path路径:<br>1.path.join:只是单纯的将路径拼接在一起；</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(path.join(<span class="string">'./a'</span>, <span class="string">'/b'</span>, <span class="string">'/c'</span>));<span class="comment">// ./a/b/c</span></span><br></pre></td></tr></table></figure>
-
-<p>2.path.resolve:绝对路径，以开始的路径片段作为根目录，在此之前的路径将会被丢弃,总是返回一个以相对于当前的工作目录的绝对路径。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(path.join(<span class="string">'./a'</span>, <span class="string">'/b'</span>, <span class="string">'/c'</span>));<span class="comment">// /c;</span></span><br></pre></td></tr></table></figure>
-
-<p>3.用<strong>dirname</strong>使用join方法也能得到绝对路径</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(path.join(__dirname, <span class="string">'./test.txt'</span>));</span><br></pre></td></tr></table></figure>
-
-<p>###6.url</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">'url'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'https://www.baidu.com:8080/a/b?name=zhagnsan&amp;age=18#hash'</span>;</span><br><span class="line"><span class="keyword">var</span> urlObj = url.parse(str, <span class="literal">true</span>);</span><br><span class="line"><span class="comment">// 第二个参数传  true的话， 得到的 urlObj 中的query 部分会是一个对象&#123; name: 'zhagnsan', age: '18' &#125;</span></span><br><span class="line"><span class="built_in">console</span>.log(urlObj.query.age);</span><br></pre></td></tr></table></figure>
-
-<p>###7.http 模块搭建 <code>web服务器</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    res.writeHead(<span class="number">200</span>, &#123;<span class="string">'Content-Type'</span>: <span class="string">'text/html; charset=utf-8'</span>&#125;);</span><br><span class="line">    res.write(<span class="string">'hello world'</span>);</span><br><span class="line">    res.end();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'web服务启动成功，地址： http://127.0.0.1:3000'</span>);</span><br></pre></td></tr></table></figure>
-
-<p>###8.例：渲染一个表单</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> url = <span class="built_in">require</span>(<span class="string">'url'</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> qs = <span class="built_in">require</span>(<span class="string">'querystring'</span>);</span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 1. 得到 url 地址</span></span><br><span class="line">  <span class="keyword">let</span> pathname = url.parse(req.url).pathname;</span><br><span class="line">  <span class="comment">// 2. 过滤掉 /favicon.ico 的请求</span></span><br><span class="line">  <span class="keyword">if</span> (pathname !== <span class="string">'/favicon.ico'</span>) &#123;</span><br><span class="line">    <span class="comment">// 3. 根据不同的 pathname 渲染不同的内容</span></span><br><span class="line">    res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/html; charset=utf-8'</span> &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (pathname === <span class="string">'/login.html'</span>) &#123;</span><br><span class="line">      <span class="keyword">let</span> data = fs.readFileSync(<span class="string">'./login.html'</span>);</span><br><span class="line">      res.write(data);</span><br><span class="line">      res.end();</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (pathname === <span class="string">'/handelLogin'</span>) &#123;</span><br><span class="line">      <span class="comment">// 4. 拿出前端传递过来的 post 数据</span></span><br><span class="line">      <span class="keyword">let</span> buf = <span class="string">''</span>;</span><br><span class="line">      <span class="comment">// 请求传输过程事件</span></span><br><span class="line">      req.on(<span class="string">'data'</span>, (chunk) =&gt; &#123;</span><br><span class="line">        buf += chunk;</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 请求传输完成事件</span></span><br><span class="line">      req.on(<span class="string">'end'</span>, () =&gt; &#123;</span><br><span class="line">        <span class="keyword">var</span> obj = qs.parse(buf);</span><br><span class="line">        <span class="built_in">console</span>.log(obj);</span><br><span class="line"></span><br><span class="line">        res.write(obj.username);</span><br><span class="line">        res.end();</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      res.write(<span class="string">'首页'</span>)</span><br><span class="line">      res.end();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">server.listen(<span class="number">3000</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'服务启动成功'</span>);</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/14/post初识nodejs/" data-id="cjwwu8xcv000154qgx4wmkmik" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
