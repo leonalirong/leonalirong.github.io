@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/css/mic_main.css">
     <link rel="stylesheet" href="/css/dropdownMenu.css">
-    <meta name="keywords" content="miccall">
+    <meta name="keywords" content="Leona">
     
     	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	 
@@ -81,7 +81,7 @@
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
-    <a href="/" class="logo">MICCALL</a>
+    <a href="/" class="logo">DETAIL</a>
 </header>
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special">
@@ -145,7 +145,7 @@
 </nav>
 
         <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://raw.githubusercontent.com/miccall/MyTextures/master/271043-106.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
                 <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>express基础和mongodb</h2></a>
             </div>
             <!-- Post -->
@@ -159,7 +159,7 @@
 <h3 id="2-express-Router-构造器"><a href="#2-express-Router-构造器" class="headerlink" title="2.express.Router 构造器"></a>2.express.Router 构造器</h3><blockquote>
 <p>能够帮助我们创建一个路由的中间件函数，可以将不同的路由分开来写。。。</p>
 </blockquote>
-<h3 id="3-设置静态资源托管"><a href="#3-设置静态资源托管" class="headerlink" title="3.设置静态资源托管"></a>3.设置静态资源托管</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/ 设置静态资源托管</span><br><span class="line">app.use(express.static(path.resolve(__dirname, <span class="string">'./public'</span>)));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置使用 req.body , 只有使用上这两个中间件，req.body 才能是一个对象，否则是一个 undefined.</span></span><br><span class="line">app.use(express.json());</span><br><span class="line">app.use(express.urlencoded(&#123; <span class="attr">extended</span>: <span class="literal">false</span> &#125;));</span><br></pre></td></tr></table></figure>
+<h3 id="3-设置静态资源托管"><a href="#3-设置静态资源托管" class="headerlink" title="3.设置静态资源托管"></a>3.设置静态资源托管</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置静态资源托管</span></span><br><span class="line">app.use(express.static(path.resolve(__dirname, <span class="string">'./public'</span>)));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置使用 req.body , 只有使用上这两个中间件，req.body 才能是一个对象，否则是一个 undefined.</span></span><br><span class="line">app.use(express.json());</span><br><span class="line">app.use(express.urlencoded(&#123; <span class="attr">extended</span>: <span class="literal">false</span> &#125;));</span><br></pre></td></tr></table></figure>
 
 <h3 id="4-express-中间件"><a href="#4-express-中间件" class="headerlink" title="4.express 中间件"></a>4.express 中间件</h3><blockquote>
 <p>中间件又称为中间件函数，是一个包含有 req(请求对象)、res(响应对象)、next(匹配下一个路由或者中间件) 的函数</p>
